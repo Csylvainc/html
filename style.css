@@ -112,6 +112,7 @@ input{
     border-radius: 10px;
 }
 #connexion{
+    border: 0;
     border-radius: 10px;
     font-size: larger;
     font-weight: bolder;
@@ -313,5 +314,11 @@ footer p{
    }
    #inscription{
        margin-left: -10px;
+   }
+   #footer{
+       justify-content:center;
+   }
+   .foot1{
+       justify-content: space-around;
    }
  }
