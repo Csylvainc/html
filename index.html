@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="De nombreuses communautés utilisent Nextdoor dans toute la France pour resserrer les liens au sein de leur quartier.">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,22 +42,28 @@
             <p id="formTitle">Entrerz votre adresse e-mail pour vous inscrire.</p>
             <form action="get">
                 <input type="text" name="dp" placeholder="Code postal" class="one">
-                <input type="text" name="adresse" placeholder="Votre adresse (numero et nom de voie)" class="two">
+                <input type="text" name="adresse"
+                    placeholder="Votre adresse (numero et nom de voie)" class="two">
                 <input type="text" name="email" placeholder="Adresse e-mail" class="three">
                 <button type="submit" id="quartier" class="four">Rejoignez votre quartier</button>
             </form>
         </div>
-        <section id="presentation">
-            <h2>Profitez de la vie de quartier avec Nextdoor</h2>
-            <p>Nextdoor est l'endroit où les quartiers se rassemblent pour accueillir les nouveaux
-                voisins, échanger des
-                recommandations et s'informer sur les dernières actualités locales. Où les voisins
-                soutiennent les
-                commerces locaux et reçoivent les dernières nouvelles de la part des services
-                publics. Où les voisins
-                empruntent des outils et vendent des canapés. Nextdoor est l'endroit qui vous permet
-                de profiter
-                pleinement de votre quartier. Bienvenue, cher·e voisin·e.</p>
+        <div id="info">
+            <section id="presentation">
+                <h2>Profitez de la vie de quartier avec Nextdoor</h2>
+                <p>Nextdoor est l'endroit où les quartiers se rassemblent pour accueillir les
+                    nouveaux
+                    voisins, échanger des
+                    recommandations et s'informer sur les dernières actualités locales. Où les
+                    voisins
+                    soutiennent les
+                    commerces locaux et reçoivent les dernières nouvelles de la part des services
+                    publics. Où les voisins
+                    empruntent des outils et vendent des canapés. Nextdoor est l'endroit qui vous
+                    permet
+                    de profiter
+                    pleinement de votre quartier. Bienvenue, cher·e voisin·e.</p>
+            </section>
             <section id="essentiel" class="skills">
                 <img src="./images/essentiel.svg" alt="essentiel">
                 <h3>Essentiel</h3>
@@ -67,7 +74,8 @@
             <section id="local" class="skills">
                 <img src="./images/local.svg" alt="local">
                 <h3>Local</h3>
-                <p>Le seul moyen de contacter instantanément vos voisins et les entreprises de votre
+                <p>Le seul moyen de contacter instantanément vos voisins et les entreprises de
+                    votre
                     quartier, tout en
                     s'informant des évènements autour de chez vous.</p>
             </section>
@@ -76,11 +84,11 @@
                 <h3>Fiable</h3>
                 <p>Un environnement fiable où tous les voisins sont confirmés.</p>
             </section>
-            <section>
-                <h3>Connectez-vous à votre quartier</h3>
-                <br>
-                <button type="submit" id="inscription" class="btn">S'inscrire</button>
-            </section>
+        </div>
+        <section id="secInscription">
+            <h3>Connectez-vous à votre quartier</h3>
+            <br>
+            <button type="submit" id="inscription" class="btn">S'inscrire</button>
         </section>
     </main>
     <footer>
@@ -93,7 +101,6 @@
                 <a href="#">Blog</a>
                 <a href="">Carrières</a>
                 <a href="#">Aide</a>
-
                 <h4>Entreprise</h4>
                 <a href="#">Entreprises locales</a>
             </section>

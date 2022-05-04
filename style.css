@@ -23,6 +23,7 @@ nav {
     color: white;
 
 }
+
 #logo {
     max-width: 65%;
 }
@@ -93,7 +94,6 @@ h1{
 #formTitle{
     position: relative;
     bottom:200px;
-    left: 10px;
     font-weight: bolder;
 }
 form{
@@ -202,6 +202,8 @@ footer p{
 }
 
 @media (min-width: 680px) { 
+
+    /* première image et formulaire */
     #image{
         overflow-x: hidden;
     }
@@ -284,4 +286,32 @@ footer p{
     #presentation{
         margin-top:-500px;
     }
+
+    /* presentation et skills */
+   #info{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+   }
+   #presentation{
+       grid-column: 2 / 3;
+       grid-row: 1;
+   }
+   #essentiel{
+       grid-column: 1;
+       grid-row: 2;
+   }
+   #local{
+    grid-column: 2;
+    grid-row: 2;
+   }
+   #fiable{
+       grid-column:3;
+       grid-row: 2;
+   }
+   #secInscription{
+       text-align: center;
+   }
+   #inscription{
+       margin-left: -10px;
+   }
  }
