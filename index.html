@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Nextdoor</title>
 </head>
@@ -18,38 +20,55 @@
 <body>
     <header>
         <nav>
-            <img src="./images/menu.webp" alt="menu" id="menu">
+            <img src="./images/menu.webp" alt="menu" id="hamburger">
             <img src="./images/logo.svg" alt="logo" id="logo">
             <button id="connexion">Se connecter</button>
         </nav>
-        <h1>Profitez de votre quartier</h1>
-        <img src="./images/marketplace.svg" alt="market place" id="google">
     </header>
     <main>
-        <span>Entrerz votre adresse e-mail pour vous inscrire.</span>
-        <form action="get">
-            <input type="text" name="dp" placeholder="Code postal">
-            <input type="text" name="adresse" placeholder="Votre adresse (numero et nom de voie)">
-            <input type="text" name="email" placeholder="Adresse e-mail">
-            <button type="submit" id="quartier">Rejoignez votre quartier</button>
-        </form>
+        <div class="menuCache" id="menu">
+            <ul>
+                <li>Voisins</li>
+                <li>Entreprise</li>
+            </ul>
+        </div>
+        <div id="entete">
+            <div id="image">
+                <img src="./images/nextdoorBG.jpg" alt="famille" id="famille">
+            </div>
+            <h1>Profitez de votre quartier</h1>
+            <img src="./images/marketplace.svg" alt="market place" id="google">
+            <p id="formTitle">Entrerz votre adresse e-mail pour vous inscrire.</p>
+            <form action="get">
+                <input type="text" name="dp" placeholder="Code postal" class="one">
+                <input type="text" name="adresse" placeholder="Votre adresse (numero et nom de voie)" class="two">
+                <input type="text" name="email" placeholder="Adresse e-mail" class="three">
+                <button type="submit" id="quartier" class="four">Rejoignez votre quartier</button>
+            </form>
+        </div>
         <section id="presentation">
             <h2>Profitez de la vie de quartier avec Nextdoor</h2>
-            <p>Nextdoor est l'endroit où les quartiers se rassemblent pour accueillir les nouveaux voisins, échanger des
-                recommandations et s'informer sur les dernières actualités locales. Où les voisins soutiennent les
-                commerces locaux et reçoivent les dernières nouvelles de la part des services publics. Où les voisins
-                empruntent des outils et vendent des canapés. Nextdoor est l'endroit qui vous permet de profiter
+            <p>Nextdoor est l'endroit où les quartiers se rassemblent pour accueillir les nouveaux
+                voisins, échanger des
+                recommandations et s'informer sur les dernières actualités locales. Où les voisins
+                soutiennent les
+                commerces locaux et reçoivent les dernières nouvelles de la part des services
+                publics. Où les voisins
+                empruntent des outils et vendent des canapés. Nextdoor est l'endroit qui vous permet
+                de profiter
                 pleinement de votre quartier. Bienvenue, cher·e voisin·e.</p>
             <section id="essentiel" class="skills">
                 <img src="./images/essentiel.svg" alt="essentiel">
                 <h3>Essentiel</h3>
-                <p>Des actualités et des informations pertinentes provenant directement de vos voisins, de commerces
+                <p>Des actualités et des informations pertinentes provenant directement de vos
+                    voisins, de commerces
                     locaux et des services publics.</p>
             </section>
             <section id="local" class="skills">
                 <img src="./images/local.svg" alt="local">
                 <h3>Local</h3>
-                <p>Le seul moyen de contacter instantanément vos voisins et les entreprises de votre quartier, tout en
+                <p>Le seul moyen de contacter instantanément vos voisins et les entreprises de votre
+                    quartier, tout en
                     s'informant des évènements autour de chez vous.</p>
             </section>
             <section id="fiable" class="skills">
@@ -104,6 +123,7 @@
         <hr>
         <p>Conçu par vos voisins à Paris et San Francisco. © Nextdoor 2022.</p>
     </footer>
+    <script src="./menu.js"></script>
 </body>
 
 </html>

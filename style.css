@@ -2,12 +2,14 @@
     font-family: "Lato","sans serif";
 }
 header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
     display: flex;
     flex-direction:column;
     justify-content:space-between;
     color: white;
-    height: 300px;
-    background-image: url("./images/nextdoorBG.jpg");
+    width:100%;
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -24,36 +26,108 @@ nav {
 #logo {
     max-width: 65%;
 }
+.menuCache{
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 50px;
+    left: -300px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+.menuVisible{
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size:30px;
+    font-weight: 100;
+    color: rgb(8, 0, 0);
+}
+li {
+        margin-bottom: 35px;
+}
+       
+
+
+
+#image{
+    overflow-x: hidden;
+}
+#famille{
+    z-index: -1;
+    height: 300px;
+}
+h1{
+    position: relative;
+    bottom:210px;
+    margin: 80px 0px 10px 20px;
+    font-style: italic;
+    color: white;
+}
+#google{
+    position: relative;
+    bottom: 200px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+#formTitle{
+    position: relative;
+    bottom:200px;
+    left: 10px;
+    font-weight: bolder;
+}
+form{
+    position: relative;
+    bottom:180px;
+    left: 10px;
+    width: 95%;
+}
+input{
+    /* padding: 5px; */
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    background-color: rgb(242,242,242);
+    height: 50px;
+    border-radius: 10px;
+}
 #connexion{
     border-radius: 10px;
     font-size: larger;
     font-weight: bolder;
     padding: 10px;
 }
-#menu{
-    height: 50px;
-}
-#menu{
+#hamburger{
     height: 40px;
 }
-h1{
-    margin: 80px 0px 10px 20px;
-    font-style: italic;
-}
+
 h3{
     font-size: larger;  
     font-style: italic;
 }
-#google{
-    margin-left: 20px;
-    margin-bottom: 10px;
-    width: 150px;
-}
-main{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#presentation{
+    margin-top:-150px;
+    margin-inline: 10px;
 }
 a{
     text-decoration: none;
@@ -68,21 +142,10 @@ span{
     font-weight: bold;
     margin: 20px 0;
 }
-form{
-    text-align: center;
 
-}
-input{
-    /* padding: 5px; */
-    width: 100%;
-    margin-bottom: 20px;
-    border: 0;
-    background-color: rgb(242,242,242);
-    height: 50px;
-    border-radius: 10px;
-}
+
 #quartier{
-    width: 90%;
+    width: 100%;
     height: 50px;
     border: 0;
     border-radius: 10px;
@@ -138,3 +201,87 @@ footer p{
     text-align: center;
 }
 
+@media (min-width: 680px) { 
+    #image{
+        overflow-x: hidden;
+    }
+    #famille{
+        z-index: -1;
+        height: 640px;
+    }
+    h1{
+        position: relative;
+        bottom: 600px;
+        margin: 80px 0px 10px 20px;
+        font-size: 62px;
+        width:70%;
+        margin-left: 100px ;
+        font-style: italic;
+        color: white;
+    }
+    #google{
+        position: relative;
+        bottom: 300px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        width: 150px;
+    }
+
+    #formTitle{
+        position: relative;
+        width: 100%;
+        color: white;
+        bottom:680px;
+        text-align: center;
+        font-weight: bolder;
+        
+    }
+    form{
+        min-width: 620px;
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding:20px;
+        border-radius:10px;
+        bottom:680px;
+        width: 70%;
+    }
+    input{
+        width: 100%;
+        margin-bottom: 20px;
+        border: 0;
+        background-color: rgb(242,242,242);
+        height: 30px;
+        border-radius: 10px;
+    }
+    .one{
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+    .two{
+        grid-column: 1 / 4;
+        grid-row: 2; 
+    }
+    .three{
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+    .four{
+        grid-column: 3;
+        grid-row: 3;
+    }
+    #quartier{
+        width: 100%;
+        height: 30px;
+        border: 0;
+        border-radius: 10px;
+        background-color: rgb(184, 236, 81);
+        font-weight: bolder;
+    }
+    #presentation{
+        margin-top:-500px;
+    }
+ }
